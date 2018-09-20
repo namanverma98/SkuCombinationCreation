@@ -1,0 +1,26 @@
+// import the CSS framework
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+// Styles for upload csv form
+.upload_form {
+  padding-top: 150px;
+  max-width: 520px;
+  margin: 0 auto;
+}
+.upload_form form {
+  @extend .well;
+  @extend .well-lg;
+  padding-bottom: 40px;
+  background-color: #e3e7ed;
+}
+.upload_form .right {
+  float: right !important;
+}
+.upload_form .button {
+  @extend .btn;
+  @extend .btn-primary;
+}
+.upload_form fieldset {
+  @extend .well;
+}

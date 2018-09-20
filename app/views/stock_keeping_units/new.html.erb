@@ -1,0 +1,21 @@
+<div class="upload_form">
+  <%= form_tag({:action => :import}, multipart: true) do %>
+    <h5>UPLOAD A CSV</h5>
+    <hr>
+    <div>
+    <%= file_field_tag :file , required: true %>
+    </div>
+  </br>
+  </br>
+    <div>
+    <%= label_tag 'SKU Denominations', "SKU Denominations" %>
+    </div>
+    <div>
+    <%= text_field_tag :sku_denominations, '',{class: 'form-control' , type: 'number', min: 1, required: true, value: '~.csv'} %>
+    </div>
+  </br>
+    <div>
+    <%= submit_tag "Submit"  , class: 'button left' %>
+    </div>
+  <% end %>
+</div>
